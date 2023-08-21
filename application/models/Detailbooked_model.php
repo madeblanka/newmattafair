@@ -76,7 +76,6 @@ class Detailbooked_model extends CI_Model
                 'id_package' => $data['id_package'],
                 'adult' => $data['adult'][$i],
                 'child' => $data['child'][$i],
-                'person' => $data['person'][$i],
                 'price' => $data['price'][$i],
                 'total_price' => $data['total_price'][$i],
                 'created_at' => $data['created_at'][$i],

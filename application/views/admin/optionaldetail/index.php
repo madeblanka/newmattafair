@@ -40,32 +40,32 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">DataTable with default features</h3><br>
-                <a href="<?php echo site_url('room/adminaddroom/') ?>"><button type="button" class="btn btn-block btn-outline-primary" style="width: 20%;">Tambah Data</button></a>
+                <a href="<?php echo site_url('optionaldetail/formadd/') ?>"><button type="button" class="btn btn-block btn-outline-primary" style="width: 20%;">Tambah Data</button></a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>Kategori</th>
-                    <th>Benefit 1</th>
-                    <th>Benefit 2</th>
-                    <th>Benefit 3</th>
+                    <th>id_package</th>
+                    <th>detail</th>
+                    <th>pax 2 - 4</th>
+                    <th>pax 5 - 8</th>
+                    <th>pax 9 - 12</th>
                     <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
-                  <?php foreach ($package as $p): ?>
+                  <?php foreach ($optionaldetail as $o): ?>
                     <tr>
-                      <td><?php echo $p->name?></td>
-                      <td><?php echo $p->kategori?></td>
-                      <td><?php echo $p->benefit1?></td>
-                      <td><?php echo $p->benefit2?></td>
-                      <td><?php echo $p->benefit3?></td>
+                      <td><?php echo $o->id_package?></td>
+                      <td><?php echo $o->detail?></td>
+                      <td><?php echo $o->pax2?></td>
+                      <td><?php echo $o->pax5?></td>
+                      <td><?php echo $o->pax9?></td>
                       <td> 
-                      <a href="<?php echo site_url('package/formedit/'.$p->id_package) ?>" href="#!" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-                      <a href="<?php echo site_url('package/delete/'.$p->id_package) ?>"
+                      <a href="<?php echo site_url('package/formedit/'.$o->id_package) ?>" href="#!" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                      <a href="<?php echo site_url('package/delete/'.$o->id_package) ?>"
                       onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini ?');" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
                       </td>
                       </tr>

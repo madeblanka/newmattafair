@@ -56,7 +56,9 @@ class Main extends CI_Controller {
         $childarray = $this->input->post('child',TRUE);
         $child = array_filter($childarray, 'strlen');
         $adult = array_filter($adultarray, 'strlen');
+        $price = $this->input->post('price',TRUE);
 
+        var_dump($price);
         $id_package = $this->input->post('id_package',TRUE);
         
         $pax2 = $this->input->post('pax2',TRUE);

@@ -54,6 +54,7 @@
                             <option value="Optional Halfday Tour">Optional Halfday Tour</option>
                             <option value="Optional Transafer">Optional Transafer</option>
                             <option value="Optional Charter">Optional Charter</option>
+                            <option value="SPECIAL TOUR IF STAY IN NORTH BALI HOTEL (LOVINA)">SPECIAL TOUR IF STAY IN NORTH BALI HOTEL (LOVINA) </option>
                         </select>
                     </div>
                   <div class="form-group">
