@@ -40,7 +40,7 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">DataTable with default features</h3><br>
-                <a href="<?php echo site_url('room/adminaddroom/') ?>"><button type="button" class="btn btn-block btn-outline-primary" style="width: 20%;">Tambah Data</button></a>
+                <a href="<?php echo site_url('night/formadd/') ?>"><button type="button" class="btn btn-block btn-outline-primary" style="width: 20%;">Tambah Data</button></a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

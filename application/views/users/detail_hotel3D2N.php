@@ -25,18 +25,19 @@
             <div class="bg-white md:p-10 rounded-xl">
                 <h1 class="font-bold text-lg md:text-3xl mb-10">Free & Easy 3D2N</h1>
                 <!-- <h1 class="font-thin text-md mb-10 ml-3">Hotel</h1> -->
+               
                 <div class="flex md:flex-row flex-col gap-5 h-64 md:h-96    ">
                     <div class="flex gap-5 md:w-2/3 ">
-                        <a data-lightbox="image-1" href="./assets/img/slider1.jpg" class="md:w-[100%] md:max-w-[100%]" alt="">
-                            <img src="./assets/img/slider1.jpg" class="rounded-lg w-full h-full object-cover" alt="">
+                        <a data-lightbox="image-1" href="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="md:w-[100%] md:max-w-[100%]" alt="">
+                            <img src="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full h-full object-cover" alt="">
                         </a>
                     </div>
                     <div class="flex flex-row md:flex-col gap-5  md:w-[45%] w-full align-center">
-                        <a data-lightbox="image-1" href="./assets/img/slider2.jpg" class="rounded-lg w-full h-[50%]   md:full object-cover" alt="">
-                            <img src="./assets/img/slider2.jpg" class="rounded-lg w-full  md:h-full object-cover" alt="">
+                        <a data-lightbox="image-1" href="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full h-[50%]   md:full object-cover" alt="">
+                            <img src="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full  md:h-full object-cover" alt="">
                         </a>
                         <div class="object-cover w-full overflow-hidden  aspect-video bg-red-400 cursor-pointer rounded-xl relative group">
-                            <a data-lightbox="image-1" href="./assets/img/slider3.jpg">
+                            <a data-lightbox="image-1" href="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>">
 
                                 <div class="flex rounded-xl z-50 opacity-100 h-full cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white  items-center">
                                     <div>
@@ -46,20 +47,21 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="./assets/img/slider3.jpg">
-                                <img alt="" class="rounded-lg w-full  md:full object-cover" src="./assets/img/slider3.jpg" />
+                            <a href="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>">
+                                <img alt="" class="rounded-lg w-full  md:full object-cover" src="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" />
                             </a>
                         </div>
                     </div>
                     <div class="hidden flex-row md:flex-col gap-5  md:w-[45%] w-full align-center">
-                        <a data-lightbox="image-1" href="./assets/img/slider2.jpg" class="rounded-lg w-full  md:full object-cover" alt="">
-                            <img src="./assets/img/slider2.jpg" class="rounded-lg w-full  md:h-full object-cover" alt="">
+                        <a data-lightbox="image-1" href="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full  md:full object-cover" alt="">
+                            <img src="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full  md:h-full object-cover" alt="">
                         </a>
-                        <a data-lightbox="image-1" href="./assets/img/slider3.jpg" class="rounded-lg w-full  md:full object-cover" alt="">
-                            <img src="./assets/img/slider3.jpg" class="rounded-lg w-full  md:h-full object-cover" alt="">
+                        <a data-lightbox="image-1" href="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full  md:full object-cover" alt="">
+                            <img src="<?= base_url('package/Paasha_Atelier_Kuta_-_.jpg')?>" class="rounded-lg w-full  md:h-full object-cover" alt="">
                         </a>
                     </div>
                 </div>
+
             </div>
             <div class="container mx-auto p-8">
         <h1 class="text-2xl font-semibold mb-4">3D2N OR 4N3D - FREE & EASY PACKAGE:</h1>
@@ -125,24 +127,21 @@
                             <?php $key = 1;?>
                             <?php foreach($package as $p):?>
                             <div class="">
-                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="<?php echo $key;?>" data-collapse-toggle="<?php echo $key;?>">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-expanded="true">
                                     <input type="hidden" value=<?= $p->id_package?> name="id_package[]">
                                     <span class="flex-1 text-xl md:text-xl ml-3 text-left font-semibold whitespace-nowrap"><?= $p->name?></span>
-                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
                                 </button>
-                                <div class="hidden py-2 space-y-2" id="<?php echo $key;?>">
+                                <div class=" py-2 space-y-2" id="<?php echo $key;?>">
                                     <div class="bg-white p-6 rounded-lg shadow-md">
                                         <!-- <h2 class="text-2xl font-semibold mb-4">Paasha Atelier Kuta</h2> -->
                                         <p class="font-semibold mb-4 ml-2">Start From MYR. <?= $p->startfrom?></p>
 
                                         <div class="flex gap-5 md:w-full mb-4">
                                             <a data-lightbox="image-2" href="<?= site_url('package/'.$p->image)?>" class="md:w-[100%] md:max-w-[100%]" alt="">
-                                                <img src="./assets/img/slider1.jpg" class="rounded-lg w-full h-full object-cover" alt="">
+                                                <img src="<?= site_url('package/'.$p->image)?>" class="rounded-lg w-full h-full object-cover" alt="">
                                             </a>
                                         </div>
-                                        <div class="hidden flex flex-row md:flex-col gap-5  md:w-[45%] w-full align-center">
+                                        <!-- <div class="hidden flex flex-row md:flex-col gap-5  md:w-[45%] w-full align-center">
                                             <a data-lightbox="image-2" href="./assets/img/slider2.jpg" class="rounded-lg w-full h-[50%]   md:full object-cover" alt="">
                                                 <img src="./assets/img/slider2.jpg" class="rounded-lg w-full  md:h-full object-cover" alt="">
                                             </a>
@@ -161,20 +160,41 @@
                                                     <img alt="" class="rounded-lg w-full  md:full object-cover" src="./assets/img/slider3.jpg" />
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="text-gray-600 mb-2">
                                             <div class="mb-6">
                                                 <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Person</label>
                                                 <div class="flex flex-col md:flex-row gap-10 ">
                                                     <div class="flex flex-col w-full">
                                                         <h1 class=" text-sm font-thin mr-4 mb-2 ">Adult</h1>
-                                                        <input type="number" name="adult" min="1" id="adult" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                                                        <input type="number" name="adult[]" min="2" id="adult" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                                     </div>
                                                     <div class="flex flex-col w-full">
                                                         <h1 class=" text-sm font-thin mr-4 mb-2 ">Child</h1>
-                                                        <input type="number" name="child" min="0" id="child" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                                                        <input type="number" name="child[]" min="0" id="child" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
                                                     </div>
                                                 </div>
+                                                <div class="mb-6">
+                                                <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Child Bed Choose</label>
+                                                <div class="flex flex-col md:flex-row gap-10 ">
+                                                <select name="cwb" id="diskon" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                                                    <option value="0.85">Child With Bed</option>
+                                                    <option value="0.65">Child With No Bed</option>
+                                                </select>
+                                                </div>
+                                                <input type="hidden" value="<?php 
+                                $object = $this->Night_model->getByIdpackage($p->id_package)[0];
+                                    ?>" >
+                                <input type="hidden" value="<?php echo($object->threeday2pax); ?>" id="a">
+                                                <input type="hidden" value="<?php 
+                                $object = $this->Night_model->getByIdpackage($p->id_package)[0];
+                                    ?>" >
+                                <input type="hidden" value="<?php echo($object->threeday5pax); ?>" id="b">
+                                                <input type="hidden" value="<?php 
+                                $object = $this->Night_model->getByIdpackage($p->id_package)[0]; 
+                                    ?>" >
+                                <input type="hidden" value="<?php echo($object->threeday9pax); ?>" id="c">
+                                            </div>
                                             </div>
                                             <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="benefit<?php echo $key;?>" data-collapse-toggle="benefit<?php echo $key;?>">
                                                 <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
@@ -618,54 +638,57 @@
 
                 </div>
             </div>
-            
-            <div class="flex">
             <section>
-        <div class="bg-gray-100 h-screen flex ">
+        <div class="bg-white h-screen flex ">
             <div class="w-[70%] bg-white mx-auto p-10 rounded-lg shadow-md  justify-center align-center self-center ">
-             
+                <form action="" method="">
                     <h1 class="text-xl mb-10 font-semibold">Form Guest</h1>
                     <div class="relative z-0 w-full mb-6 group">
-                        <input type="text" name="name" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <input type="text" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
                     </div>
                     <div class="relative z-0 w-full mb-6 group">
-                        <input type="text" name="address" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <input type="text" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
                     </div>
                     <div class="relative z-0 w-full mb-6 group">
-                        <input type="number" name="zipcode" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <input type="number" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Zip Code</label>
                     </div>
 
                     <div class="grid md:grid-cols-2 md:gap-6" style="align-items: self-end;">
                         <div class="relative z-0 w-full mb-6 group">
                             <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your country</label>
-                            <select id="countries" name="country" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option value="MY">Malaysia</option>
                             </select>
                         </div>
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="text" name="state" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                             <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">State</label>
                         </div>
                     </div>
+                    <div class="relative z-0 w-full mb-6 group">
+                        <input type="text" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">City</label>
+                    </div>
                     <div class="grid md:grid-cols-2 md:gap-6">
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="number" name="mobilenumber" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <input type="number" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                             <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number </label>
                         </div>
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="email" name="email" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <input type="email" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                             <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
                         </div>
                     </div>
-            </div>
-            </section>
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                </form>
 
-                <button type="submit" class="w-full md:w-1/2 mx-auto justify-center align-center text-center self-center mt-12 text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Book</button>
+
             </div>
-        </section>
+    </section>
+ 
     </form>
    
 
@@ -673,7 +696,52 @@
 
 
     <?php $this->load->view('users/_partials/footer.php')?>
-    
+    <script>
+    const adultInput = document.getElementById("adult");
+    const childInput = document.getElementById("child");
+    const childPriceInput = document.getElementById("diskon");
+    const aSpan = document.getElementById("a");
+    const bSpan = document.getElementById("b");
+    const cSpan = document.getElementById("c");
+    const totalPriceSpan = document.getElementById("price");
+    adultInput.addEventListener("input", updateTotalPrice);
+
+    function updateTotalPrice() {
+        const adult = adultInput.value;
+        const adultinput = parseInt(adult);
+        const childPrice = parseFloat(childPriceInput.value);
+        const child = childInput.value
+        let pricePerRoom = 0;
+        // Retrieve the total price value directly from the element
+        console.log(adultInput.value)
+
+        if(adultInput.value >0 && adultInput.value <= 4 )
+        {
+            const total = aSpan.value;
+            console.log(total)
+            pricePerRoom = total * adult + (total * childPrice*(child));
+        }
+        if(adultInput.value >4 && adultInput.value <=8)
+        {
+            const total = bSpan.value;
+            console.log(total)
+            pricePerRoom = total * adult + (total * childPrice*(child));
+
+        }else
+        {
+            const total = cSpan.value;
+            console.log(total)
+            pricePerRoom = total * adult + (total * childPrice*(child));
+            
+        }
+        console.log(pricePerRoom)
+
+        // Perform your calculation based on the total and numRooms
+        // Update the total price display
+        // totalPriceSpan.textContent = pricePerRoom.toFixed(2);
+        totalPriceSpan.innerHTML = pricePerRoom;
+    }
+    </script>
     <script>
         function updatedate() {
             var checkinInput = document.getElementById("checkin");

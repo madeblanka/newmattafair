@@ -52,13 +52,21 @@ class Main extends CI_Controller {
         $updated_at ="";
 
         // detail booked
-        $id_package = $this->input->post('id_package',TRUE);
-        $adult = $this->input->post('adult',TRUE);
-        $child = $this->input->post('child',TRUE);
-        $price = $this->input->post('price',TRUE);
-        var_dump($adult);die();
-        $total_price = $adult * $price;
+        $adultarray = $this->input->post('adult',TRUE);
+        $childarray = $this->input->post('child',TRUE);
+        $child = array_filter($childarray, 'strlen');
+        $adult = array_filter($adultarray, 'strlen');
 
+        $id_package = $this->input->post('id_package',TRUE);
+        
+        $pax2 = $this->input->post('pax2',TRUE);
+        $pax5 = $this->input->post('pax5',TRUE);
+        $pax9 = $this->input->post('pax9',TRUE);
+        
+        // var_dump($adultarray,$pax2);die();
+
+        $total_price = $adult ;
+        
         $this->Booked_model->create_booked($name,$address,$zipcode,$state,$country,$email,$mobilenumber,$created_at,$updated_at);
         $this->Detailbooked_model->create_booked($id_package,$adult,$child,$price,$total_price,$created_at,$updated_at);
     }

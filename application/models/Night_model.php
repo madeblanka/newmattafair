@@ -26,6 +26,10 @@ class Night_model extends CI_Model
     {
         return $this->db->get_where($this->_table, ["id_night" => $id_night])->result();
     }
+    public function getByIdpackage($id_package)
+    {
+        return $this->db->get_where($this->_table, ["id_package" => $id_package])->result();
+    }
     
     public function get3d($a)
     {

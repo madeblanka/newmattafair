@@ -86,8 +86,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			= false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -109,8 +109,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			= false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -131,8 +131,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -153,8 +153,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -175,8 +175,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -197,8 +197,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -219,8 +219,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -241,8 +241,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -263,8 +263,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
@@ -285,8 +285,8 @@ class Image_model extends CI_Model
         $config['allowed_types']        = 'jpg|png|webp|jpeg';
         $config['file_name']            = rand(1,100000);
         $config['overwrite']			      = false;
-        $config['max_size']             = 1024; // 1MB
-        // $config['max_width']            = 1024;
+        $config['max_size']             = 2048; // 1MB
+        // $config['max_width']            = 2048;
         // $config['max_height']           = 768;
 
         $this->load->library('upload', $config);
